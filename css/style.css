@@ -85,6 +85,10 @@ main::after {
 .icon-plus .text-icon {
   vertical-align: middle;
 }
+.container-playlist {
+  overflow-y: scroll;
+  height: 300px;
+}
 .name-playlist {
   margin-top: 20px;
   font-weight: 700;
@@ -93,15 +97,15 @@ main::after {
   border-bottom: 1px solid #606060;
 }
 .download-app {
-  margin-top: 250px;
+  margin-top: 430px;
   margin-bottom: 10px;
   color: #606060;
   font-size: 15px;
 }
 .user {
   font-size: 22px;
-  margin-top: 30px;
-
+  margin-top: 10px;
+}
 
 .main-content{
   float: left;
@@ -114,5 +118,76 @@ main::after {
 footer {
   width: 100%;
   height: 90px;
-  background-color: orange;
+  background-color: #282828;
+}
+footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Footer-left*/
+.footer-left {
+  float: left;
+  width: 33.3%;
+  display: inline-block;
+  line-height: 90px;
+}
+.footer-left img {
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.footer-left span {
+  color: white;
+}
+.footer-left .like {
+  display: inline-block;
+  margin-left: 40px;
+  color: #606060;
+}
+.footer-left .like i:first-child {
+  margin-right: 10px;
+}
+/* /Footer-left*/
+
+/*Footer-central*/
+.footer-central {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+.footer-central i {
+  font-size: 18px;
+  margin-left: 8px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.footer-central i:nth-child(3) {
+  font-size: 30px;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+/* /Footer-central*/
+
+
+
+@media screen and (max-width: 768px) {
+
+  .main-nav span {
+    visibility: hidden;
+  }
+  .logo-spotify {
+    font-size: 35px;
+    vertical-align: middle;
+  }
+  .download {
+    border-bottom: 0px;
+  }
+  .download-app {
+    font-size: 20px;
+  }
 }
