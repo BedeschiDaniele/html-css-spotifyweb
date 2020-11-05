@@ -274,7 +274,7 @@ footer::after {
   height: 45px;
   line-height: 45px;
 }
-#timeline {
+.timeline {
   width: 70%;
   height: 5px;
   display: inline-block;
@@ -284,13 +284,31 @@ footer::after {
   text-align: left;
   overflow: hidden;
 }
-#time {
+.time {
   width: 30%;
   height: 100%;
   background-color: white;
   display: inline-block;
   vertical-align: top;
 }
+.footer-right {
+  float: left;
+  width: 33.3%;
+  text-align: end;
+  color: white;
+  line-height: 90px;
+}
+.footer-right i {
+  margin-right: 10px;
+}
+.footer-right .timeline {
+    width: 30%;
+}
+.footer-right .time {
+    width: 30%;
+}
+
+
 
 
 /* /Footer-central*/
