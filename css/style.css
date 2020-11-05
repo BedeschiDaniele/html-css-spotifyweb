@@ -56,6 +56,9 @@ main {
 .nav-menu ul {
   list-style: none;
 }
+.nav-menu a {
+  font-weight: 600;
+}
 .nav-menu li {
   height: 30px;
   line-height: 30px;
@@ -77,6 +80,9 @@ main {
 .nav-playlist li {
   height: 30px;
   line-height: 30px;
+}
+.nav-playlist a {
+  font-weight: 600;
 }
 #playlists {
   height: 67%;
@@ -174,22 +180,22 @@ main {
 }
 .main-content h3 {
   color: white;
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 32px;
-  margin-bottom: 20px;
 }
 .music {
   display: flex;
+  width: 100%;
 }
 .box-images {
   text-align: center;
+  margin-top: 30px;
 }
-
 .box-images img {
   width: 100%;
-  padding: 10px;
+  padding-right: 10px;
 }
-.box-images p {
+.container p {
   margin-top: 5px;
   color: #A3A3A3;
 }
@@ -197,8 +203,17 @@ main {
   font-size: 20px;
   color: white;
   font-weight: 600;
+  margin-top: 20px;
 }
-
+.created .box-images {
+  width: calc(100% / 6);
+}
+.popular .box-images {
+  width: calc(100% / 6);
+}
+.popular img {
+  border-radius: 50%;
+}
 
 footer {
   width: 100%;
@@ -255,6 +270,28 @@ footer::after {
   margin-left: 18px;
   margin-right: 18px;
 }
+.production-music {
+  height: 45px;
+  line-height: 45px;
+}
+#timeline {
+  width: 70%;
+  height: 5px;
+  display: inline-block;
+  margin: 0 20px;
+  border-radius: 5px;
+  background-color: #5A5A5A;
+  text-align: left;
+  overflow: hidden;
+}
+#time {
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+}
+
 
 /* /Footer-central*/
 
