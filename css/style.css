@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* General */
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -14,21 +14,22 @@ a {
   text-decoration: none;
 }
 
+
 h2 {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
 }
-
+/* /General */
 main {
   display: flex;
   height: calc(100% - 90px);
   overflow-y: hidden;
 }
+/* main-nav */
 .main-nav {
   width: 250px;
   height: 100%;
-  /* padding: 20px; */
   background-color: black;
   overflow-y: hidden;
   min-height: 480px;
@@ -68,6 +69,9 @@ main {
   vertical-align: middle;
   height: 30px;
   width: 30px;
+}
+a:hover {
+  color: white;
 }
 
 .nav-playlist {
@@ -134,15 +138,13 @@ main {
   vertical-align: middle;
   margin-right: 10px;
 }
-
+/* main-content*/
 .main-content{
-  /* height: 100%; */
   width: calc(100% - 250px);
   padding: 110px 20px 20px;
   background-color: #141922;
   overflow-y: auto;
 }
-
 .cta {
   position: fixed;
   top: 0;
@@ -163,6 +165,10 @@ main {
   font-weight: 600;
   transition: font-size 0.2s linear;
 }
+.cta a:hover {
+  font-size: 20px;
+}
+
 .nav-main {
   text-align: center;
 }
@@ -190,6 +196,7 @@ main {
 }
 .box {
   position: relative;
+  text-align: center;
 }
 .box-images {
   text-align: center;
@@ -205,7 +212,7 @@ main {
     opacity: 0;
     transition: opacity 0.2s linear;
 }
-.main-content  .box .box-images:hover > .layover {
+.main-content  .box .box-images .layover:hover {
     cursor: pointer;
     opacity: 1;
 }
@@ -240,13 +247,25 @@ main {
 .popular img {
   border-radius: 50%;
 }
-
+/* footer */
 footer {
   width: 100%;
   height: 90px;
   display: flex;
   justify-content: space-between;
   background-color: #282828;
+}
+.timeline:hover .time {
+  background-color: #ADFD31;
+}
+.timeline:hover .time::after {
+  content: "";
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  float: right;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 /*Footer-left*/
@@ -326,11 +345,12 @@ footer {
 .footer-right .timeline {
     width: 30%;
 }
+
 .footer-right .time {
     width: 30%;
 }
 /* /Footer-right*/
-
+/* media query*/
 @media screen and (min-width: 1200px) {
   .nav-logo i {
     display: none;
@@ -383,7 +403,7 @@ footer {
     flex-wrap: wrap;
   }
   .main-content .container .played .box {
-    width: 51%;
+    width: 50%;
   }
   .main-content {
     width: calc(100% - 70px);
