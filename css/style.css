@@ -262,7 +262,8 @@ footer {
 .timeline:hover .time {
   background-color: #ADFD31;
 }
-.timeline:hover .time {
+/*CIRCLE*/
+.cicrcle:hover {
   content: "";
   background-color: white;
   width: 20px;
@@ -278,6 +279,7 @@ footer {
   display: inline-block;
   line-height: 90px;
   display: flex;
+  align-items: center;
 }
 .footer-left img {
   height: 50px;
@@ -289,17 +291,14 @@ footer {
   color: white;
 }
 
-.name-cd a {
-  color: #A3A3A3;
-}
-
 .footer-left .like {
   display: inline-block;
   margin-left: 40px;
   color: #606060;
 }
-.footer-left .like i:first-child {
+.footer-left i {
   margin-right: 10px;
+  margin-left: 10px;
 }
 /* /Footer-left*/
 
@@ -382,6 +381,11 @@ footer {
   .nav-logo i {
     display: none;
   }
+  .footer-left .like {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px)  and (max-width: 991px) {
@@ -399,6 +403,11 @@ footer {
   }
   .nav-logo i {
     display: none;
+  }
+  .footer-left .like {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
 
@@ -445,13 +454,44 @@ footer {
   .nav-menu {
     padding: 0;
   }
+  .footer-left i {
+      font-size: 12px;
+      margin: 0 3px;
+  }
+  .footer-left .like {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .footer-left img {
+    height: 35px;
+    width: 35px;
+}
   .footer-central {
     width: 40%;
   }
+  .footer-central i {
+    font-size: 12px;
+  }
+  .footer-central i:nth-child(3) {
+    font-size: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+  .timeline {
+    margin: 0 5px;
+  }
   .footer-left {
-    width: 30%;
+    width: 100px;
   }
   .footer-right {
-      width: 30%;
+      width: 100px;
+  }
+  .footer-right i {
+      font-size: 12px;
+      margin: 0px;
+  }
+  .timeline {
+    width: 30%;
   }
 }
