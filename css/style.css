@@ -238,11 +238,15 @@ a:hover {
   font-weight: 600;
   margin-top: 20px;
 }
-.created .box-images {
+.created .box {
   width: calc(100% / 6);
 }
-.popular .box-images {
+.popular .box {
   width: calc(100% / 6);
+}
+.popular .box-images .layover {
+  border-radius: 50%;
+  width: calc(100% - 5px);
 }
 .popular img {
   border-radius: 50%;
@@ -258,7 +262,7 @@ footer {
 .timeline:hover .time {
   background-color: #ADFD31;
 }
-.timeline:hover .time::after {
+.timeline:hover .time {
   content: "";
   background-color: white;
   width: 20px;
@@ -273,6 +277,7 @@ footer {
   width: 250px;
   display: inline-block;
   line-height: 90px;
+  display: flex;
 }
 .footer-left img {
   height: 50px;
@@ -280,9 +285,14 @@ footer {
   vertical-align: middle;
   margin: 0 10px;
 }
-.footer-left span {
+.footer-left h5 {
   color: white;
 }
+
+.name-cd a {
+  color: #A3A3A3;
+}
+
 .footer-left .like {
   display: inline-block;
   margin-left: 40px;
@@ -434,5 +444,14 @@ footer {
   }
   .nav-menu {
     padding: 0;
+  }
+  .footer-central {
+    width: 40%;
+  }
+  .footer-left {
+    width: 30%;
+  }
+  .footer-right {
+      width: 30%;
   }
 }
