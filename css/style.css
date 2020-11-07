@@ -13,6 +13,20 @@
 a {
   text-decoration: none;
 }
+.active {
+  position: relative;
+  display: inline-block;
+}
+.active::after {
+  position: relative;
+  top: 5px;
+  left:30%;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 40%;
+  background-color: lime;
+}
 
 
 h2 {
@@ -53,6 +67,12 @@ main {
 }
 .nav-menu {
   padding: 20px 0;
+}
+.nav-menu .active::after  {
+  height: 20px;
+  width: 10%;
+  top: -21px;
+  left: -42px;
 }
 .nav-menu ul {
   list-style: none;
@@ -445,6 +465,9 @@ footer {
 
 @media screen and (max-width: 767px) {
   .main-nav a,h2{
+    display: none;
+  }
+  .nav-menu .active::after  {
     display: none;
   }
   .main-nav .installer {
